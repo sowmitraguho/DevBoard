@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="">
+<body class=" mx-auto">
 
     <Header class="container mx-auto">
         <nav class="bg-white border-gray-200 rounded-lg border-gray-200 shadow-lg">
@@ -26,8 +26,8 @@
             </div>
         </nav>
     </Header>
-    <Main class="container mx-auto">
-        <section class="main-section">
+    <Main class="container mx-auto grid grid-cols-7 gap-2">
+        <section class="main-section col-span-5">
             <section class="banner-section p-4 grid grid-cols-3">
                 <div class="task-count flex items-center">
                     <input class="mr-4 w-4 bg-[#3752FD]" type="checkbox" checked name="" id="">
@@ -222,17 +222,17 @@
 
             </section>
         </section>
-        <section class="history-section">
-            <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
-                <div class="flex items-center mb-4">
-                    
+        <section class="history-section col-span-2">
+            <div class="flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg p-6">
+                <div class="flex items-center mb-4 mx-auto">
+                    <img src="assets/activity.png" alt="" srcset="">
                     <h5 class="ml-3 text-slate-800 text-xl font-semibold">
                         Activity Log
                     </h5>
                 </div>
 
                 <button
-                    class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                    class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md  mx-auto"
                     type="button">
                     Clear History
                 </button>
