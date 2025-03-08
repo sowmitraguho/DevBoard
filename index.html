@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
@@ -21,15 +21,15 @@
                 <div class="flex justify-center items-center space-x-6 rtl:space-x-reverse">
                     <input type="checkbox" checked name="" id="" class="mr-2">
                     <a id="total-task" href="tel:5541251234" class=" font-bold hover:underline">23</a>
-                    <img src="assets/theme-btn.png" class="h-8" alt="Flowbite Logo" />
+                    <img onclick="bgColorset()" id="bg-color-set" src="assets/theme-btn.png" class="h-8" alt="Flowbite Logo" />
                 </div>
             </div>
         </nav>
     </Header>
-    <Main class="container mx-auto grid grid-cols-7 gap-2">
-        <section class="main-section col-span-5">
-            <section class="banner-section p-4 grid grid-cols-3">
-                <div class="task-count flex items-center">
+    <Main class="container mx-auto grid grid-cols-7 gap-2 mt-4">
+        <section class="main-section col-span-5 bg-white rounded-lg p-4">
+            <section class="banner-section p-4 grid grid-cols-4">
+                <div class="task-count flex items-center bg-white p-4 rounded-lg">
                     <input class="mr-4 w-4 bg-[#3752FD]" type="checkbox" checked name="" id="">
                     <div class="task-text  text-[#00303C]">
                         <p class="text-sm text-gray-500">Task Assigned</p>
@@ -37,15 +37,15 @@
                     </div>
                 </div>
                 <div
-                    class="discover-section rounded-lg px-8 py-4 flex justify-around items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]">
+                    class="discover-section rounded-lg px-8 py-4 flex justify-around items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] col-span-2">
                     <img src="assets/board.png" alt="" srcset="">
-                    <h2 class="text-white font-semibold">Discover Something New Today!</h2>
+                    <a href="blogs.html" class="text-white font-semibold">Discover Something New Today!</a>
                 </div>
-                <div class="date-section mx-auto flex items-center">
+                <div class="date-section mx-auto flex items-center bg-white p-4 rounded-lg">
                     <img class="h-8 mr-4" src="assets/calender.png" alt="" srcset="">
                     <div class="day-and-date text-[#00303C]">
-                        <p class="day">Wed ,</p>
-                        <p class="date font-bold">Jul 28 2025</p>
+                        <p id="day">Wed ,</p>
+                        <p id="date" class="date font-bold">Jul 28 2025</p>
                     </div>
 
                 </div>
@@ -222,8 +222,8 @@
 
             </section>
         </section>
-        <section class="history-section col-span-2">
-            <div class="flex flex-col my-6 bg-white  p-6">
+        <section class="history-section col-span-2 bg-white rounded-lg">
+            <div class="flex flex-col my-6 bg-white rounded-lg p-6">
                 <div class="flex items-center mb-4 mx-auto">
                     <img src="assets/activity.png" alt="" srcset="">
                     <h5 class="ml-3 text-slate-800 text-xl font-semibold">

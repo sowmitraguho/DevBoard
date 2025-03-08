@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="mx-auto">
+    <Header class="container mx-auto">
+        <nav class="bg-white border-gray-200 rounded-lg border-gray-200 shadow-lg">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/logo.png" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">DevBoard</span>
+                </a>
+                <a href="index.html" class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md font-bold"
+                    >
+                    Back to Desk
+                </a>
+            </div>
+        </nav>
+    </Header>
+    <Main>
+        <div class="card card-border bg-base-100">
+            <h1 class="text-2xl font-bold text-center my-4">Blogs</h1>
+            <div class="card-body">
+                <h2 class="card-title mb-2 text-2xl font-bold tracking-tight text-gray-900">Question-1: What are the
+                    different ways to select an element in the DOM?</h2>
+                <p class="font-normal text-gray-700">There are several ways to select an element in the dom. Some of the
+                    ways are listed below:
+                <ul class="font-normal text-gray-700" type="disc">
+                    <li><b>By calling ID:</b> let element = document.getElementById("elementId");</li>
+                    <li><b>By class Name:</b> let elements = document.getElementsByClassName("myClass");</li>
+                    <li><b>By Tag Name:</b> let elements = document.getElementsByTagName("p");</li>
+                    <li><b>By Query Selector:</b> let element = document.querySelector(".myClass");
+                        <br>let elements = document.querySelectorAll(".myClass");
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Question-2: What is the
+                    difference between innerHTML, innerText, and textContent ?</h2>
+                <p class="font-normal text-gray-700">innerHTML, innerText and textContent are explained below:
+                <ol class="font-normal text-gray-700">
+                    <li> <b>innerHTML:</b> it recieves and sets all the html tag, class, attributes with content inside
+                        an element.</li>
+                    <li> <b>innerText:</b> it recieves and sets the text content inside an element.</li>
+                    <li><b>textContent:</b> it recieves and sets the text content inside an element with hidden content.
+                    </li>
+                </ol>
+                </p>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Question-3: What is event
+                    delegation in the DOM?</h2>
+                <p class="font-normal text-gray-700">Event delegation is the way of adding an eventListener to multiple
+                    elements by calling their parents element.
+                </p>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Question-4: What is event
+                    bubbling in the DOM?</h2>
+                <p class="font-normal text-gray-700">Event bubbling is the way of adding an eventListener to an elements
+                    and its parent elements too.
+                </p>
+            </div>
+            <div class="card-body">
+                <h2 class="card-title mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Question-5: How do you
+                    create, add, and remove elements using JavaScript?</h2>
+                <p class="font-normal text-gray-700">
+                    <b>Process of creating element:</b> using document.createElement() function. <br>
+                    <b>Process of adding element:</b> using document.appendChild(), document.append() function. <br>
+                    <b>Process of removing element:</b> using document.removeChild(), document.remove() functions. <br>
+                </p>
+            </div>
+        </div>
+    </Main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
