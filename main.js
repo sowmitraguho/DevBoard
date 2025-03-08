@@ -24,6 +24,18 @@ function taskComplete(button) {
     totalTask.innerText = parseInt(totalTask.innerText) + 1;
     taskRemained.innerText = '0' + (parseInt(taskRemained.innerText) -1);
 
+    // Show an alert
+    alert("Board updated Succesfully");
+
+    //show final alert
+    if (!parseInt(taskRemained.innerText)) alert("Congratualtions!");
+
 
     console.log(title);
+}
+
+function clearHistory() {
+    const historyList = document.getElementById('history-list');
+    historyList.innerHTML = '';
+
 }
