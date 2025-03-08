@@ -27,30 +27,221 @@
         </nav>
     </Header>
     <Main class="container mx-auto">
-        <section class="banner-section p-4 grid grid-cols-3">
-            <div class="task-count flex items-center">
-                <input class="mr-4 w-4 bg-[#3752FD]" type="checkbox" checked name="" id="">
-                <div class="task-text  text-[#00303C]">
-                    <p class="text-sm text-gray-500">Task Assigned</p>
-                    <p class="font-bold " id="tasks">06</p>
+        <section class="main-section">
+            <section class="banner-section p-4 grid grid-cols-3">
+                <div class="task-count flex items-center">
+                    <input class="mr-4 w-4 bg-[#3752FD]" type="checkbox" checked name="" id="">
+                    <div class="task-text  text-[#00303C]">
+                        <p class="text-sm text-gray-500">Task Assigned</p>
+                        <p class="font-bold " id="tasks">06</p>
+                    </div>
                 </div>
-            </div>
-            <div class="discover-section rounded-lg px-8 py-4 flex justify-around items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]">
-                <img src="assets/board.png" alt="" srcset="">
-                <h2 class="text-white font-semibold">Discover Something New Today!</h2>
-            </div>
-            <div class="date-section mx-auto flex items-center">
-                <img class="h-8 mr-4" src="assets/calender.png" alt="" srcset="">
-                <div class="day-and-date text-[#00303C]">
-                    <p class="day">Wed ,</p>
-                    <p class="date font-bold">Jul 28 2025</p>
+                <div
+                    class="discover-section rounded-lg px-8 py-4 flex justify-around items-center bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]">
+                    <img src="assets/board.png" alt="" srcset="">
+                    <h2 class="text-white font-semibold">Discover Something New Today!</h2>
+                </div>
+                <div class="date-section mx-auto flex items-center">
+                    <img class="h-8 mr-4" src="assets/calender.png" alt="" srcset="">
+                    <div class="day-and-date text-[#00303C]">
+                        <p class="day">Wed ,</p>
+                        <p class="date font-bold">Jul 28 2025</p>
+                    </div>
+
+                </div>
+            </section>
+            <section class="task-section grid grid-cols-3 gap-4 py-4">
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">ShopEase</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Fix Mobile Button Issue
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">CloudSync</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Add Dark Mode
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">SwiftPay</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Optimize Home Page
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">Meta</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Add New emoji
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">Google LLC</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Integrate OpenAI API
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-card relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg ">
+                    <h5 class="py-4 px-8">Glassdoar</h5>
+                    <div class="px-4">
+                        <h5 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Improve Job Seraching
+                        </h5>
+                        <div class="card-text px-4">
+                            <p class="text-slate-600 leading-normal font-light">
+                                Debug using chrome
+                            </p>
+                            <p class="text-slate-600 leading-normal font-light">
+                                DevTools check for overlapping...
+                            </p>
+                        </div>
+
+                        <div class="py-4 border-t border-slate-200  grid grid-cols-2 items-center justify-between">
+                            <p class="text-sm text-[#00303C] font-medium">
+                                Deadline <br> <span class="font-bold">21 March 2025</span>
+                            </p>
+                            <button
+                                class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                                type="button">
+                                Completed
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
 
+            </section>
+        </section>
+        <section class="history-section">
+            <div class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 p-6">
+                <div class="flex items-center mb-4">
+                    
+                    <h5 class="ml-3 text-slate-800 text-xl font-semibold">
+                        Activity Log
+                    </h5>
+                </div>
+
+                <button
+                    class="rounded-md bg-[#3752FD] py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md "
+                    type="button">
+                    Clear History
+                </button>
             </div>
         </section>
+
     </Main>
-    
-    
+
+
 
 
 
